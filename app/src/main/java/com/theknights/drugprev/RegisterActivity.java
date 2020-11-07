@@ -3,6 +3,7 @@ package com.theknights.drugprev;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -48,7 +49,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                finish();
             }
         });
 

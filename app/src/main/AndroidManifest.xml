@@ -15,11 +15,13 @@
         android:roundIcon="@mipmap/ic_sayno_pic_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".OkayActivity"></activity>
+        <activity android:name=".MessageActivity" />
         <activity android:name=".StressedActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

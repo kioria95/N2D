@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-            quote_text.setText("Great job, keep it up!");
+            startActivity(new Intent(MainActivity.this,OkayActivity.class));
             }
         });
 

@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MessageActivity extends AppCompatActivity {
-    private EditText txtMobile;
     private EditText txtMessage;
     private Button btnSms;
 
@@ -26,7 +25,6 @@ public class MessageActivity extends AppCompatActivity {
         setTitle("Message");
 
 
-        txtMobile = (EditText)findViewById(R.id.mblTxt);
         txtMessage = (EditText)findViewById(R.id.msgTxt);
         btnSms = (Button)findViewById(R.id.btnSend);
         btnSms.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +32,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try{
                     SmsManager smgr = SmsManager.getDefault();
-                    smgr.sendTextMessage(txtMobile.getText().toString(),null,txtMessage.getText().toString(),null,null);
+                    smgr.sendTextMessage("0701448559",null,txtMessage.getText().toString(),null,null);
                     Toast.makeText(MessageActivity.this, "SMS Sent Successfully", Toast.LENGTH_SHORT).show();
                     finish();
                 }
