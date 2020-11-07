@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StressedActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/help_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quote_button"
+        android:layout_width="140dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/stressed"
+        android:padding="15dp"
+        android:text="Get quote"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quote" />
+
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="257dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/okay"
+        android:padding="15dp"
+        android:text="Call Professional"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_button" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
+        android:text="You Can Do This, Drugs are not the answer"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/quote_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/text_button"
+        android:layout_width="199dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/my_message"
+        android:text="Text Professional"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/call_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quote_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stressed_button"
+        android:layout_width="140dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/login_button"
+        android:padding="15dp"
+        android:text="Stressed "
+        android:textColor="@color/bg_register"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/verystressed_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okay_btn" />
+
+    <Button
+        android:id="@+id/okay_btn"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/okay"
+        android:text="Okay"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/stressed_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quote" />
+
+    <Button
+        android:id="@+id/verystressed_button"
+        android:layout_width="184dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/verystressed"
+        android:text="Very Stressed"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stressed_button" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="86dp"
+        android:text="How Are You Feeling Today?"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/okay_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_toolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="92dp"
+        android:text="Welcome"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/quote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

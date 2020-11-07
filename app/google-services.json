@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "273391492102",
+    "firebase_url": "https://drug-prevention-b6d73.firebaseio.com",
+    "project_id": "drug-prevention-b6d73",
+    "storage_bucket": "drug-prevention-b6d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273391492102:android:d81526a5f34a4dbef33787",
+        "android_client_info": {
+          "package_name": "com.theknights.drugprev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273391492102-0j0dto168g2mdjc6jv0grd1jqp2n3md4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASNC39Z0ndsO42quu3JvLiB2fpH0KjQ6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273391492102-0j0dto168g2mdjc6jv0grd1jqp2n3md4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
